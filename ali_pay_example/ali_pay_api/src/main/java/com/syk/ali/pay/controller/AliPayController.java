@@ -40,9 +40,9 @@ public class AliPayController {
         AlipayClient alipayClient = new DefaultAlipayClient(URL,APP_ID,APP_PRIVATE_KEY,FORMAT,CHARSET,ALIPAY_PUBLIC_KEY,SIGN_TYPE);
         AlipayTradePrecreateRequest alipayRequest = new AlipayTradePrecreateRequest();
         // 设置支付宝异步通知回调地址 (注意：这个网址必须是可以通过外网访问的网址)
-        alipayRequest.setNotifyUrl("http://frujcq.natappfree.cc");
+        alipayRequest.setNotifyUrl("http://n95hiq.natappfree.cc/api/call");
         alipayRequest.setBizContent ( "{"   +
-                "\"out_trade_no\":\"1189\"," + // 商户订单号
+                "\"out_trade_no\":\"1188\"," + // 商户订单号
                 "\"total_amount\":\"88.88\"," +	// 商品价格
                 "\"subject\":\"测试\"," +	// 商品标题
                 "\"store_id\":\"公司名\"," +	// 组织或公司名
